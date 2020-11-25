@@ -7,6 +7,8 @@ module.exports = {
     publicPath: "http://localhost:9000/",
     filename: 'main.js'
   },
+  devtool: "cheap-module-source-map",
+  entry: ['@babel/polyfill','./src/index.js'],
   module: {
     rules: [
       {
